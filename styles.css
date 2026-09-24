@@ -2,6 +2,7 @@
   #Servicios{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10%;
 }
 }
 
@@ -9,9 +10,17 @@
     #Servicios{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5%;
+
     }
 }
-
+@media (max-width: 768px){
+    #Servicios{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5%;
+    }
+}
 
 header{
     text-align: center;
@@ -21,13 +30,12 @@ header{
     color: rgb(31, 31, 28);
 
 }
-#Servicios{
+#Servicios h1 h2 h3{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     padding: 20px;
     margin: 20px;
     display: flexbox;
-    gap: 20px;
     
 }
 
@@ -35,6 +43,7 @@ header{
     background-color: rgba(180, 180, 255, 0.452);
     transition: 0.3s ease;
     transform: translateY(-5px);
+    
 }
 
 body{
@@ -61,7 +70,7 @@ body{
 }
 
 .Serviciomula{
-  box-shadow: 10px 10px 5px rgb(86, 148, 228);   
+  box-shadow: 10px 10px 5px rgb(86, 148, 228);  
   text-align: center;
   padding: 20px;
   margin: 20px;
